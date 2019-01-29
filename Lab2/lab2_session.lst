@@ -1,0 +1,946 @@
+SQL> Create table Customer (custid varchar(50) PRIMARY KEY, la
+  2  
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> ;
+  1* Create table Customer (custid varchar(50) PRIMARY KEY, la
+SQL> Create table Customer (custid varchar(5) PRIMARY KEY, lastname varchar(15), city varchar(10));
+
+Table created.
+
+SQL> Create table DeliveryService (serviceid varchar(10) PRIMARY KEY, item varchar(15), location varchar(15), servicefee NUMBER(*,2));
+
+Table created.
+
+SQL> Create table Schedule (serviceid varchar(2) FORE
+  2  
+SQL> ;
+  1* Create table Schedule (serviceid varchar(2) FORE
+SQL> 
+SQL> Create table Schedule (serviceid varchar(2) FOREIGN KEY, cust varchar(2) FOREIGN KEY, day
+  2  
+SQL> 
+SQL> ;
+  1* Create table Schedule (serviceid varchar(2) FOREIGN KEY, cust varchar(2) FOREIGN KEY, day
+SQL> Create table Schedule (serviceid FOREIGN KEY, custid FOREIGNKEY, day varchar(2))
+  2  CHECK (day in ('m','t','w','r','f');
+Create table Schedule (serviceid FOREIGN KEY, custid FOREIGNKEY, day varchar(2))
+                                         *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+SQL> ;
+  1  Create table Schedule (serviceid FOREIGN KEY, custid FOREIGNKEY, day varchar(2))
+  2* CHECK (day in ('m','t','w','r','f')
+SQL> 
+SQL> Create table Schedule (serviceid FOREIGN KEY, custid FOREIGNKEY, day varchar(2))
+  2  CHECK (day in ('m','t','w','r','f')
+  3  );
+Create table Schedule (serviceid FOREIGN KEY, custid FOREIGNKEY, day varchar(2))
+                                         *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+SQL> Create table Schedule (serviceid FOREIGN KEY, custid FOREIGNKEY, day varchar(2))
+  2  CHECK (day in ('m','t','w','r','f'));
+Create table Schedule (serviceid FOREIGN KEY, custid FOREIGNKEY, day varchar(2))
+                                         *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+SQL> Create table Schedule (serviceid FOREIGN KEY, custid FOREIGN KEY, day varchar(2))
+  2  CHECK (day in ('m','t','w','r','f'));
+Create table Schedule (serviceid FOREIGN KEY, custid FOREIGN KEY, day varchar(2))
+                                         *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+SQL> Create table Schedule (CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid),
+  2  day varchar(2) NOT NULL
+  3  CHECK (day in ('m','t','w','r','f')));
+Create table Schedule (CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid),
+                                                        *
+ERROR at line 1:
+ORA-00906: missing left parenthesis 
+
+
+SQL> Create table Schedule
+  2  (CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid),
+  3  CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid),
+  4  day varchar(2) NOT NULL
+  5  CHECK (day in ('m','t','w','r','f'));
+(CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid),
+                                  *
+ERROR at line 2:
+ORA-00906: missing left parenthesis 
+
+
+SQL> Create table Schedule
+  2  (CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid),
+  3  CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid),
+  4  day varchar(2) NOT NULL
+  5  CHECK (day in ('m','t','w','r','f')));
+(CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid),
+                                  *
+ERROR at line 2:
+ORA-00906: missing left parenthesis 
+
+
+SQL> l
+  1  Create table Schedule
+  2  (CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid),
+  3  CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid),
+  4  day varchar(2) NOT NULL
+  5* CHECK (day in ('m','t','w','r','f')))
+SQL> Create table Schedule( CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid), day varchar(2) NOT NULL, CHECK (day in ('m','t','w','r','f')));
+Create table Schedule( CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid), day varchar(2) NOT NULL, CHECK (day in ('m','t','w','r','f')))
+                                                        *
+ERROR at line 1:
+ORA-00906: missing left parenthesis 
+
+
+SQL> l
+  1* Create table Schedule( CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid), day varchar(2) NOT NULL, CHECK (day in ('m','t','w','r','f')))
+SQL> Create table Schedule( CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid), day varchar(2) NOT NULL, CHECK (day in ('m','t','w','r','f')))
+  2  ;
+Create table Schedule( CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid), day varchar(2) NOT NULL, CHECK (day in ('m','t','w','r','f')))
+                                                        *
+ERROR at line 1:
+ORA-00906: missing left parenthesis 
+
+
+SQL> Create table Schedule( CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid), day varchar(2) NOT NULL, CHECK (day in ('m','t','w','r','f'));
+Create table Schedule( CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid), day varchar(2) NOT NULL, CHECK (day in ('m','t','w','r','f'))
+                                                        *
+ERROR at line 1:
+ORA-00906: missing left parenthesis 
+
+
+SQL> Create table Schedule( CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid), day varchar(2) NOT NULL, CHECK (day in ('m','t','w','r','f')));
+Create table Schedule( CONSTRAINT serviceid FOREIGN KEY REFERENCES DeliveryService(serviceid), CONSTRAINT custid FOREIGN KEY REFERENCES Customer(custid), day varchar(2) NOT NULL, CHECK (day in ('m','t','w','r','f')))
+                                                        *
+ERROR at line 1:
+ORA-00906: missing left parenthesis 
+
+
+SQL> CREATE TABLE Schedule (
+  2  CONSTRAINT serviceid FOREIGN KEY,
+  3  fpawefjopwafhwe][fjp]
+  4  
+SQL> sd
+SP2-0042: unknown command "sd" - rest of line ignored.
+SQL> ;
+  1  CREATE TABLE Schedule (
+  2  CONSTRAINT serviceid FOREIGN KEY,
+  3* fpawefjopwafhwe][fjp]
+SQL> CREATE TABLE Schedule (
+  2  serviceid varchar(10) FOREIGN KEY REFERENCES DeliveryService(serviceid),
+  3  custid varchar(5) FOREIGN KEY REFERENCES Customer(custid),
+  4  day varchar(2) NOT NULL,
+  5  CHECK (day in ('m','t','w','r','f')));
+serviceid varchar(10) FOREIGN KEY REFERENCES DeliveryService(serviceid),
+                      *
+ERROR at line 2:
+ORA-00907: missing right parenthesis 
+
+
+SQL> CREATE TABLE Schedule (
+  2  serviceid varchar(10),
+  3  custid(5),
+  4  day varchar(2) NOT NULL,
+  5  CONSTRAINT serviceid FOREIGN KEY (serviceid) REFERENCES DeliveryService(serviceid)
+  6  CONSTRAINT custid FOREIGN KEY (custid) REFERENCES Customer(custid)
+  7  CHECK(day in('m','t','w','r','f'))
+  8  );
+custid(5),
+      *
+ERROR at line 3:
+ORA-00902: invalid datatype 
+
+
+SQL> CREATE TABLE Schedule (
+  2  serviceid varchar(10),
+  3  custid varchar(5),
+  4  day varchar(2) NOT NULL,
+  5  CONSTRAINT serviceid FOREIGN KEY (serviceid) REFERENCES DeliveryService(serviceid)
+  6  CONSTRAINT custid FOREIGN KEY (custid) REFERENCES Customer(custid)
+  7  CHECK(day in ('m','t','w','r','f'))
+  8  );
+CONSTRAINT custid FOREIGN KEY (custid) REFERENCES Customer(custid)
+*
+ERROR at line 6:
+ORA-00907: missing right parenthesis 
+
+
+SQL> CREATE TABLE Schedule (
+  2  serviceid varchar(10),
+  3  custid varchar(5),
+  4  day varchar(2) NOT NULL,
+  5  CONSTRAINT serviceid FOREIGN KEY (serviceid) REFERENCES DeliveryService(serviceid)
+  6  ,CONSTRAINT custid FOREIGN KEY (custid) REFERENCES Customer(custid)
+  7  ,CHECK(day in ('m','t','w','r','f'))
+  8  );
+
+Table created.
+
+SQL> DROP TABLE Customer;
+DROP TABLE Customer
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+SQL> DROP TABLE Schedule;
+
+Table dropped.
+
+SQL> DROP TABLE ,
+  2    4  day varchar(2) NOT NULL,
+  3  
+SQL> 
+SQL> DROP TABLE Customer;
+
+Table dropped.
+
+SQL> Create table Customer (custid varchar(5) PRIMARY KEY, lastname varchar(15), city varchar(10));
+
+Table created.
+
+SQL> DROP TABLE Customer;
+
+Table dropped.
+
+SQL> Create table Customer (custid varchar(5) PRIMARY KEY, firstname varchar(10), lastname varchar(15), city varchar(10));
+
+Table created.
+
+SQL> CREATE TABLE Schedule (
+  2  serviceid varchar(10),
+  3  custid varchar(5),day varchar(2) NOT NULL,
+  4  CONSTRAINT serviceid FOREIGN KEY (serviceid) REFERENCES DeliveryService(serviceid)
+  5  ,CONSTRAINT custid FOREIGN KEY (custid) REFERENCES Customer(custid),CHECK(day in ('m','t','w','r','f'))
+  6  );
+
+Table created.
+
+SQL> INSERT INTO Customer ('c1',’John’,'Smith','SJ');
+INSERT INTO Customer ('c1',’John’,'Smith','SJ')
+                      *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+SQL> INSERT INTO Customer('custid', 'firstname', 'lastname', 'city')
+  2  VALUES ('c1',’John’,'Smith','SJ');
+INSERT INTO Customer('custid', 'firstname', 'lastname', 'city')
+                     *
+ERROR at line 1:
+ORA-00928: missing SELECT keyword 
+
+
+SQL> INSERT INTO Customer VALUES ('c1',’John’,'Smith','SJ');
+INSERT INTO Customer VALUES ('c1',’John’,'Smith','SJ')
+                                  *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> INSERT INTO Customer VALUES ('c1','John','Smith','SJ');
+
+1 row created.
+
+SQL> INSERT INTO Customer VALUES ('c2','Mary','Jones','SFO');
+
+1 row created.
+
+SQL> INSERT INTO Customer VALUES ('a1','Vincent','Chen','SJ');
+
+1 row created.
+
+SQL> INSERT INTO Customer VALUES ('a12','Greg','King','SJ');
+
+1 row created.
+
+SQL> INSERT INTO Customer VALUES ('c7','James','Bond','LA');
+
+1 row created.
+
+SQL> INSERT INTO Customer VALUES ('x10','Susan','Blogg','SFO');
+
+1 row created.
+
+SQL> INSERT INTO Customer VALUES ('e2','Tzuyu','Chou','TN');
+
+1 row created.
+
+SQL> INSERT INTO Customer VALUES('w3','longlong','man','JP');
+
+1 row created.
+
+SQL> host ls
+
+SQL> 
+SQL> 
+SQL> DELETE FROM Customer
+  2  ;
+
+8 rows deleted.
+
+SQL> host ls
+
+SQL> Start data.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+INSERT INTO Schedule VALUES ('dg5','c32','t')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (ECHENG.CUSTID) violated - parent key not found 
+
+
+SQL> start data.sql;
+INSERT INTO Customer VALUES ('c1','John','Smith','SJ')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679816) violated 
+
+
+INSERT INTO Customer VALUES ('c2','Mary', 'Jones','SFO')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679816) violated 
+
+
+INSERT INTO Customer VALUES ('a1','Vincent','Chen','SJ')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679816) violated 
+
+
+INSERT INTO Customer VALUES ('a12','Greg', 'King','SJ')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679816) violated 
+
+
+INSERT INTO Customer VALUES ('c7','James','Bond','LA')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679816) violated 
+
+
+INSERT INTO Customer VALUES ('x10','Susan','Blogg','SFO')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679816) violated 
+
+
+INSERT INTO Customer VALUES ('e2','Tzuyu','Chou','TN')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679816) violated 
+
+
+INSERT INTO Customer VALUES('w3','longlong','man','JP')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679816) violated 
+
+
+INSERT INTO DeliveryService VALUES ('dsg1','grocery','SJ',25.0)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679778) violated 
+
+
+INSERT INTO DeliveryService VALUES ('dsb1','books','SJ',10.0)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679778) violated 
+
+
+INSERT INTO DeliveryService VALUES ('dsm2','movies','LA',10.0)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679778) violated 
+
+
+INSERT INTO DeliveryService VALUES ('dby3','babygoods','SFO',15.0)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679778) violated 
+
+
+INSERT INTO DeliveryService VALUES ('dsg2','grocery','SFO',20.0)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679778) violated 
+
+
+INSERT INTO DeliveryService VALUES ('dg5','greengoods','SFO',30.0)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (ECHENG.SYS_C00679778) violated 
+
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+INSERT INTO Schedule VALUES ('dg5','c32','t')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (ECHENG.CUSTID) violated - parent key not found 
+
+
+INSERT INTO Schedule VALUES ('dsg2','c1','s')
+*
+ERROR at line 1:
+ORA-02290: check constraint (ECHENG.SYS_C00679818) violated 
+
+
+SQL> 
+SQL> SELECT custid, firstname || lastname, city FROM Customer;
+
+CUSTI FIRSTNAME||LASTNAME       CITY                                            
+----- ------------------------- ----------                                      
+c1    JohnSmith                 SJ                                              
+c2    MaryJones                 SFO                                             
+a1    VincentChen               SJ                                              
+a12   GregKing                  SJ                                              
+c7    JamesBond                 LA                                              
+x10   SusanBlogg                SFO                                             
+e2    TzuyuChou                 TN                                              
+w3    longlongman               JP                                              
+
+8 rows selected.
+
+SQL> SELECT serviceid, item, location, servicefee FROM DeliveryService;
+
+SERVICEID  ITEM            LOCATION        SERVICEFEE                           
+---------- --------------- --------------- ----------                           
+dsg1       grocery         SJ                      25                           
+dsb1       books           SJ                      10                           
+dsm2       movies          LA                      10                           
+dby3       babygoods       SFO                     15                           
+dsg2       grocery         SFO                     20                           
+dg5        greengoods      SFO                     30                           
+
+6 rows selected.
+
+SQL> SELECT serviceid, custid, day FROM Schedule
+  2  ;
+
+SERVICEID  CUSTI DA                                                             
+---------- ----- --                                                             
+dsg1       c1    m                                                              
+dsg1       a12   w                                                              
+dby3       x10   f                                                              
+dg5        c1    r                                                              
+dg5        c1    t                                                              
+dsg1       c1    m                                                              
+dsg1       a12   w                                                              
+dby3       x10   f                                                              
+dg5        c1    r                                                              
+dg5        c1    t                                                              
+
+10 rows selected.
+
+SQL> SELECT custid, firstname || lastname, city FROM Customer ORDER BY lastname
+  2  ;
+
+CUSTI FIRSTNAME||LASTNAME       CITY                                            
+----- ------------------------- ----------                                      
+x10   SusanBlogg                SFO                                             
+c7    JamesBond                 LA                                              
+a1    VincentChen               SJ                                              
+e2    TzuyuChou                 TN                                              
+c2    MaryJones                 SFO                                             
+a12   GregKing                  SJ                                              
+c1    JohnSmith                 SJ                                              
+w3    longlongman               JP                                              
+
+8 rows selected.
+
+SQL> SELECT serviceid, item, location, servicefee FROM DeliveryService ORDER BY serviceid, custid DESC;
+SELECT serviceid, item, location, servicefee FROM DeliveryService ORDER BY serviceid, custid DESC
+                                                                                      *
+ERROR at line 1:
+ORA-00904: "CUSTID": invalid identifier 
+
+
+SQL> SELECT serviceid, item, location, servicefee FROM DeliveryService ORDER BY lastname;
+SELECT serviceid, item, location, servicefee FROM DeliveryService ORDER BY lastname
+                                                                           *
+ERROR at line 1:
+ORA-00904: "LASTNAME": invalid identifier 
+
+
+SQL> SELECT serviceid, custid, day FROM Schedule ORDER BY serviceid, custid DESC;
+
+SERVICEID  CUSTI DA                                                             
+---------- ----- --                                                             
+dby3       x10   f                                                              
+dby3       x10   f                                                              
+dg5        c1    t                                                              
+dg5        c1    r                                                              
+dg5        c1    t                                                              
+dg5        c1    r                                                              
+dsg1       c1    m                                                              
+dsg1       c1    m                                                              
+dsg1       a12   w                                                              
+dsg1       a12   w                                                              
+
+10 rows selected.
+
+SQL> SELECT serviceid, item, location, servicefee FROM DeliveryService
+  2  MINUS
+  3  
+SQL> 
+SQL> SELECT * FROM DeliveryService
+  2  MINUS
+  3  Select * FROM Schedule;
+SELECT * FROM DeliveryService
+*
+ERROR at line 1:
+ORA-01789: query block has incorrect number of result columns 
+
+
+SQL> SELECT serviceid FROM DeliveryService
+  2  MINUS
+  3  Select serviceid FROM Schedule;
+
+SERVICEID                                                                       
+----------                                                                      
+dsb1                                                                            
+dsg2                                                                            
+dsm2                                                                            
+
+SQL> Select name from customer, schedule where day = 'M';
+Select name from customer, schedule where day = 'M'
+       *
+ERROR at line 1:
+ORA-00904: "NAME": invalid identifier 
+
+
+SQL> SELECT firstname||lastname FROM CustomerSelect na
+  2  
+SQL> 
+SQL> SELECT firstname||lastname FROM Customer
+  2  INNER JOIN Schedule ON day = 'm'
+  3  ;
+
+FIRSTNAME||LASTNAME                                                             
+-------------------------                                                       
+JohnSmith                                                                       
+MaryJones                                                                       
+VincentChen                                                                     
+GregKing                                                                        
+JamesBond                                                                       
+SusanBlogg                                                                      
+TzuyuChou                                                                       
+longlongman                                                                     
+JohnSmith                                                                       
+MaryJones                                                                       
+VincentChen                                                                     
+
+FIRSTNAME||LASTNAME                                                             
+-------------------------                                                       
+GregKing                                                                        
+JamesBond                                                                       
+SusanBlogg                                                                      
+TzuyuChou                                                                       
+longlongman                                                                     
+
+16 rows selected.
+
+SQL> 
+SQL> SELECT custid, firstname || lastname, city FROM Customer ORDER BY lastname
+  2  
+SQL> 
+SQL> 
+SQL> 
+SQL> ;
+  1* SELECT custid, firstname || lastname, city FROM Customer ORDER BY lastname
+SQL> SELECT custid, firstname || lastname AS fullname, city FROM Customer;
+
+CUSTI FULLNAME                  CITY                                            
+----- ------------------------- ----------                                      
+c1    JohnSmith                 SJ                                              
+c2    MaryJones                 SFO                                             
+a1    VincentChen               SJ                                              
+a12   GregKing                  SJ                                              
+c7    JamesBond                 LA                                              
+x10   SusanBlogg                SFO                                             
+e2    TzuyuChou                 TN                                              
+w3    longlongman               JP                                              
+
+8 rows selected.
+
+SQL> SELECT serviceid FROM Schedule
+  2  sdafa;
+
+SERVICEID                                                                       
+----------                                                                      
+dsg1                                                                            
+dsg1                                                                            
+dby3                                                                            
+dg5                                                                             
+dg5                                                                             
+dsg1                                                                            
+dsg1                                                                            
+dby3                                                                            
+dg5                                                                             
+dg5                                                                             
+
+10 rows selected.
+
+SQL> SELECT lastname FROM Schedule
+  2  ;
+SELECT lastname FROM Schedule
+       *
+ERROR at line 1:
+ORA-00904: "LASTNAME": invalid identifier 
+
+
+SQL> SELECT lastname FROM Customer INNER JOIN Select serviceid FROM Schedule;
+SELECT lastname FROM Customer INNER JOIN Select serviceid FROM Schedule
+                                         *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> SELECT lastname FROM Customer INNER JOIN SELECT serviceid FROM Schedule;
+SELECT lastname FROM Customer INNER JOIN SELECT serviceid FROM Schedule
+                                         *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> SELECT lastname FROM Customer INNER JOIN serviceid ON Schedule;
+SELECT lastname FROM Customer INNER JOIN serviceid ON Schedule
+                                                             *
+ERROR at line 1:
+ORA-00920: invalid relational operator 
+
+
+SQL> SELECT lastname FROM Customer NATURAL JOIN Schedule;
+
+LASTNAME                                                                        
+---------------                                                                 
+Smith                                                                           
+King                                                                            
+Blogg                                                                           
+Smith                                                                           
+Smith                                                                           
+Smith                                                                           
+King                                                                            
+Blogg                                                                           
+Smith                                                                           
+Smith                                                                           
+
+10 rows selected.
+
+SQL> SELECT lastname FROM Customer
+  2  ;
+
+LASTNAME                                                                        
+---------------                                                                 
+Smith                                                                           
+Jones                                                                           
+Chen                                                                            
+King                                                                            
+Bond                                                                            
+Blogg                                                                           
+Chou                                                                            
+man                                                                             
+
+8 rows selected.
+
+SQL> SELECT * FROM Schedule;
+
+SERVICEID  CUSTI DA                                                             
+---------- ----- --                                                             
+dsg1       c1    m                                                              
+dsg1       a12   w                                                              
+dby3       x10   f                                                              
+dg5        c1    r                                                              
+dg5        c1    t                                                              
+dsg1       c1    m                                                              
+dsg1       a12   w                                                              
+dby3       x10   f                                                              
+dg5        c1    r                                                              
+dg5        c1    t                                                              
+
+10 rows selected.
+
+SQL> SELECT * FROM Customer;
+
+CUSTI FIRSTNAME  LASTNAME        CITY                                           
+----- ---------- --------------- ----------                                     
+c1    John       Smith           SJ                                             
+c2    Mary       Jones           SFO                                            
+a1    Vincent    Chen            SJ                                             
+a12   Greg       King            SJ                                             
+c7    James      Bond            LA                                             
+x10   Susan      Blogg           SFO                                            
+e2    Tzuyu      Chou            TN                                             
+w3    longlong   man             JP                                             
+
+8 rows selected.
+
+SQL> SELECT max(servicefee)
+  2  FROM DeliveryService
+  3  AS highest_Servicefee;
+AS highest_Servicefee
+*
+ERROR at line 3:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> SELECT max(servicefee)
+  2  S highest_ServicefeeFROM DeliveryService
+  3  
+SQL> ;
+  1  SELECT max(servicefee)
+  2* S highest_ServicefeeFROM DeliveryService
+SQL> SELECT max(servicefee)
+  2  AS highest_Servicefee
+  3  FROM DeliveryService;
+
+HIGHEST_SERVICEFEE                                                              
+------------------                                                              
+                30                                                              
+
+SQL> SELECT count(serviceid) FROM Schedule WHERE groupby(day);
+SELECT count(serviceid) FROM Schedule WHERE groupby(day)
+                                                       *
+ERROR at line 1:
+ORA-00920: invalid relational operator 
+
+
+SQL> SELECT count(serviceid) FROM Schedule groupby(day);
+SELECT count(serviceid) FROM Schedule groupby(day)
+                                             *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> SELECT count(serviceid) FROM Schedule group by (day);
+
+COUNT(SERVICEID)                                                                
+----------------                                                                
+               2                                                                
+               2                                                                
+               2                                                                
+               2                                                                
+               2                                                                
+
+SQL> SELECT A.custid, b.cusid,A.city FROM Customer A, Customer B WHERE A.city = B.city;
+SELECT A.custid, b.cusid,A.city FROM Customer A, Customer B WHERE A.city = B.city
+                 *
+ERROR at line 1:
+ORA-00904: "B"."CUSID": invalid identifier 
+
+
+SQL> SELECT A.custid, b.custid, A.city FROM Customer A, Customer B WHERE A.city = B.city;
+
+CUSTI CUSTI CITY                                                                
+----- ----- ----------                                                          
+a12   c1    SJ                                                                  
+a1    c1    SJ                                                                  
+c1    c1    SJ                                                                  
+x10   c2    SFO                                                                 
+c2    c2    SFO                                                                 
+a12   a1    SJ                                                                  
+a1    a1    SJ                                                                  
+c1    a1    SJ                                                                  
+a12   a12   SJ                                                                  
+a1    a12   SJ                                                                  
+c1    a12   SJ                                                                  
+
+CUSTI CUSTI CITY                                                                
+----- ----- ----------                                                          
+c7    c7    LA                                                                  
+x10   x10   SFO                                                                 
+c2    x10   SFO                                                                 
+e2    e2    TN                                                                  
+w3    w3    JP                                                                  
+
+16 rows selected.
+
+SQL> SELECT * FROM Customer;
+
+CUSTI FIRSTNAME  LASTNAME        CITY                                           
+----- ---------- --------------- ----------                                     
+c1    John       Smith           SJ                                             
+c2    Mary       Jones           SFO                                            
+a1    Vincent    Chen            SJ                                             
+a12   Greg       King            SJ                                             
+c7    James      Bond            LA                                             
+x10   Susan      Blogg           SFO                                            
+e2    Tzuyu      Chou            TN                                             
+w3    longlong   man             JP                                             
+
+8 rows selected.
+
+SQL> 
+SQL> 
+SQL> SELECT * FROM Customer INNER JOIN DeliveryService ON city = location;
+
+CUSTI FIRSTNAME  LASTNAME        CITY       SERVICEID  ITEM                     
+----- ---------- --------------- ---------- ---------- ---------------          
+LOCATION        SERVICEFEE                                                      
+--------------- ----------                                                      
+c1    John       Smith           SJ         dsb1       books                    
+SJ                      10                                                      
+                                                                                
+c1    John       Smith           SJ         dsg1       grocery                  
+SJ                      25                                                      
+                                                                                
+c2    Mary       Jones           SFO        dg5        greengoods               
+SFO                     30                                                      
+                                                                                
+
+CUSTI FIRSTNAME  LASTNAME        CITY       SERVICEID  ITEM                     
+----- ---------- --------------- ---------- ---------- ---------------          
+LOCATION        SERVICEFEE                                                      
+--------------- ----------                                                      
+c2    Mary       Jones           SFO        dsg2       grocery                  
+SFO                     20                                                      
+                                                                                
+c2    Mary       Jones           SFO        dby3       babygoods                
+SFO                     15                                                      
+                                                                                
+a1    Vincent    Chen            SJ         dsb1       books                    
+SJ                      10                                                      
+                                                                                
+
+CUSTI FIRSTNAME  LASTNAME        CITY       SERVICEID  ITEM                     
+----- ---------- --------------- ---------- ---------- ---------------          
+LOCATION        SERVICEFEE                                                      
+--------------- ----------                                                      
+a1    Vincent    Chen            SJ         dsg1       grocery                  
+SJ                      25                                                      
+                                                                                
+a12   Greg       King            SJ         dsb1       books                    
+SJ                      10                                                      
+                                                                                
+a12   Greg       King            SJ         dsg1       grocery                  
+SJ                      25                                                      
+                                                                                
+
+CUSTI FIRSTNAME  LASTNAME        CITY       SERVICEID  ITEM                     
+----- ---------- --------------- ---------- ---------- ---------------          
+LOCATION        SERVICEFEE                                                      
+--------------- ----------                                                      
+c7    James      Bond            LA         dsm2       movies                   
+LA                      10                                                      
+                                                                                
+x10   Susan      Blogg           SFO        dg5        greengoods               
+SFO                     30                                                      
+                                                                                
+x10   Susan      Blogg           SFO        dsg2       grocery                  
+SFO                     20                                                      
+                                                                                
+
+CUSTI FIRSTNAME  LASTNAME        CITY       SERVICEID  ITEM                     
+----- ---------- --------------- ---------- ---------- ---------------          
+LOCATION        SERVICEFEE                                                      
+--------------- ----------                                                      
+x10   Susan      Blogg           SFO        dby3       babygoods                
+SFO                     15                                                      
+                                                                                
+
+13 rows selected.
+
+SQL> host ls
+
+SQL> SELECT min(salary), max(salary) FROM staff.txt
+  2  ;
+SELECT min(salary), max(salary) FROM staff.txt
+                                           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> SELECT min(salary), max(salary) FROM staff-_2010
+  2  ;
+SELECT min(salary), max(salary) FROM staff-_2010
+                                          *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> spool off
