@@ -1,4 +1,4 @@
-#Lab 2
+# Lab 2
 
 This is the README.md file for Lab 2 of the COEN 178 Intro to Databases Lab course. In the first part of the lab, I wrote SQL queries by using Orderby, aggregate functions, and joining tables. To start, I created some tables and input some data into them by using the queries that I used from the last Lab, including CREATE, INSERT, and SELECT.
 
