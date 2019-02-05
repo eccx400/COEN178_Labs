@@ -30,3 +30,13 @@ FROM Staff_2010
 WHERE salary > 100000
 GROUP BY salary;
 
+/* Exercise 5 */
+SELECT COUNT(first) AS SALARIES_100K_ABOVE
+FROM Staff_2010
+WHERE salary > 100000 AND  >= 10
+GROUP BY salary;
+
+/* Exercise 6 */
+SELECT last
+FROM Staff_2010
+WHERE REGEXP_LIKE (last, '([aeiou])\1', 'i');
