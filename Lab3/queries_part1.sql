@@ -13,11 +13,14 @@ SELECT First || ' ' || Last, salary
 FROM Staff_2010
 WHERE salary IN (SELECT max(salary) FROM Staff_2010);
 
-/* Exercise 2
+/* Exercise 2 */
 SELECT last, salary
 FROM Staff_2010
-WHERE salary = (select salary from Staff_2010 where last = 'Zichal');
-*/
+WHERE salary = (select salary from Staff_2010 where UPPER(last) = 'ZICHAL');
+
+SELECT last, salary
+FROM Staff_2010
+WHERE salary IN (select salary from Staff_2010 where UPPER(last) = 'YOUNG');
 
 /* Exercise 3 */
 SELECT COUNT(*) AS SALARIES_100K_ABOVE
@@ -31,10 +34,11 @@ WHERE salary > 100000
 GROUP BY salary;
 
 /* Exercise 5 */
-SELECT COUNT(first) AS SALARIES_100K_ABOVE
+SELECT COUNT(*) AS SALARIES_100K_ABOVE
 FROM Staff_2010
-WHERE salary > 100000 AND  >= 10
-GROUP BY salary;
+WHERE salary > 100000
+GROUP BY salary
+HAVING COUNT(salary) >= 10;
 
 /* Exercise 6 */
 SELECT last

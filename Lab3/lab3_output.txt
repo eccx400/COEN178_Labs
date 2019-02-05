@@ -1,0 +1,311 @@
+SQL> start queries_part1.sql
+
+FIRST||''||LAST                               SALARY                            
+----------------------------------------- ----------                            
+ Timothy P. Love                              179700                            
+ Michael M. Hash                              179700                            
+
+
+FIRST||''||LAST                               SALARY                            
+----------------------------------------- ----------                            
+ Michael M. Hash                              179700                            
+ Timothy P. Love                              179700                            
+
+
+FIRST||''||LAST                               SALARY                            
+----------------------------------------- ----------                            
+ Michael M. Hash                              179700                            
+ Timothy P. Love                              179700                            
+
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Bhowmik                  100000                                                 
+DuBois                   100000                                                 
+Frankel                  100000                                                 
+Hurwitz                  100000                                                 
+Jarvis-Shean             100000                                                 
+Jones                    100000                                                 
+Simas                    100000                                                 
+Teehee                   100000                                                 
+Vega                     100000                                                 
+Zichal                   100000                                                 
+
+10 rows selected.
+
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Alley                     42000                                                 
+Asen                      42000                                                 
+Attili                    58511                                                 
+Ayling                    42000                                                 
+Baggetto                  42000                                                 
+Bates                     42000                                                 
+Bisi                      42000                                                 
+Block                     42000                                                 
+Campbell                  42000                                                 
+Campos                    42000                                                 
+Canery                    58511                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Carden                    42000                                                 
+Castillo                  42000                                                 
+Chhabra                   42000                                                 
+Claude                    58511                                                 
+Cobbina                   42000                                                 
+Conrad                    42000                                                 
+Cuba                      42000                                                 
+Cunningham                42000                                                 
+Donovan                   42000                                                 
+Dorsett                   42000                                                 
+Faulman                   42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Fenn                      42000                                                 
+Fergenson                 42000                                                 
+Ford                      42000                                                 
+Frank                     42000                                                 
+Godfrey                   42000                                                 
+Gottlieb                  42000                                                 
+Grant                     42000                                                 
+Hanson                    42000                                                 
+Harris                    42000                                                 
+Hegde                     42000                                                 
+Hernandez                 42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Hiatt                     42000                                                 
+Hughes                    42000                                                 
+Jackson                   42000                                                 
+Jones                     42000                                                 
+Kennedy                   42000                                                 
+Ledbetter                 42000                                                 
+Lee                       42000                                                 
+Lewin                     42000                                                 
+Lewis                     42000                                                 
+Limon                     42000                                                 
+Metcalf                   42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Mrazek                    42000                                                 
+Northern                  42000                                                 
+Ocampo                    42000                                                 
+Oxtoby                    42000                                                 
+Page                      42000                                                 
+Pope                      42000                                                 
+Portilla                  42000                                                 
+Posey                     42000                                                 
+Pulliam                   42000                                                 
+Robertson                 42000                                                 
+Schaub                    42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Schmuck                   42000                                                 
+Sinha                     42000                                                 
+Sirbu                     42000                                                 
+Smith                     42000                                                 
+Smith                     42000                                                 
+Stickel                   42000                                                 
+Swanson                   42000                                                 
+Tennison                  42000                                                 
+Thomas                    42000                                                 
+Tranchin                  42000                                                 
+Young                     42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Young                     58511                                                 
+
+67 rows selected.
+
+
+SALARIES_100K_ABOVE                                                             
+-------------------                                                             
+                140                                                             
+
+
+SALARIES_100K_ABOVE                                                             
+-------------------                                                             
+                  9                                                             
+                  9                                                             
+                  5                                                             
+                  1                                                             
+                  1                                                             
+                  5                                                             
+                  1                                                             
+                  6                                                             
+                  1                                                             
+                  1                                                             
+                  2                                                             
+
+SALARIES_100K_ABOVE                                                             
+-------------------                                                             
+                  1                                                             
+                  1                                                             
+                 27                                                             
+                  2                                                             
+                  2                                                             
+                  3                                                             
+                 23                                                             
+                  1                                                             
+                  4                                                             
+                  1                                                             
+                  1                                                             
+
+SALARIES_100K_ABOVE                                                             
+-------------------                                                             
+                  1                                                             
+                  1                                                             
+                  1                                                             
+                  1                                                             
+                  1                                                             
+                  1                                                             
+                  2                                                             
+                  1                                                             
+                  1                                                             
+                  1                                                             
+                  1                                                             
+
+SALARIES_100K_ABOVE                                                             
+-------------------                                                             
+                  2                                                             
+                  8                                                             
+                  1                                                             
+                  2                                                             
+                  3                                                             
+                  2                                                             
+                  1                                                             
+                  1                                                             
+                  1                                                             
+
+42 rows selected.
+
+
+SALARIES_100K_ABOVE                                                             
+-------------------                                                             
+                 27                                                             
+                 23                                                             
+
+
+LAST                                                                            
+--------------------                                                            
+Bookey-Baker                                                                    
+Brooke                                                                          
+Deese                                                                           
+Freeman                                                                         
+Goodman                                                                         
+Goodman                                                                         
+Green                                                                           
+Green                                                                           
+Greenawalt                                                                      
+Greene                                                                          
+Keenan                                                                          
+
+LAST                                                                            
+--------------------                                                            
+Koo                                                                             
+Lee                                                                             
+Lee                                                                             
+Reed                                                                            
+Reeves                                                                          
+Sheehy                                                                          
+Smoot                                                                           
+Sweeney                                                                         
+Teehee                                                                          
+Voorman                                                                         
+
+21 rows selected.
+
+SQL> start queries_part2.sql
+
+DEPTN   EMPCOUNT                                                                
+----- ----------                                                                
+d3             2                                                                
+d1             4                                                                
+d2             1                                                                
+
+
+DEPTN DEPTNAME     EMPCOUNT                                                     
+----- ---------- ----------                                                     
+d3    Research            2                                                     
+d3    Devt                2                                                     
+d3    Testing             2                                                     
+d3    Advert              2                                                     
+d1    Research            4                                                     
+d1    Devt                4                                                     
+d1    Testing             4                                                     
+d1    Advert              4                                                     
+d2    Research            1                                                     
+d2    Devt                1                                                     
+d2    Testing             1                                                     
+
+DEPTN DEPTNAME     EMPCOUNT                                                     
+----- ---------- ----------                                                     
+d2    Advert              1                                                     
+
+12 rows selected.
+
+
+DEPTN DEPTNAME     EMPCOUNT                                                     
+----- ---------- ----------                                                     
+d2    Testing             1                                                     
+d2    Devt                1                                                     
+d2    Research            1                                                     
+d2    Advert              1                                                     
+d3    Advert              2                                                     
+d3    Research            2                                                     
+d3    Devt                2                                                     
+d3    Testing             2                                                     
+d1    Advert              4                                                     
+d1    Testing             4                                                     
+d1    Research            4                                                     
+
+DEPTN DEPTNAME     EMPCOUNT                                                     
+----- ---------- ----------                                                     
+d1    Devt                4                                                     
+
+12 rows selected.
+
+
+DEPTI                                                                           
+-----                                                                           
+d1                                                                              
+
+
+DEPTNAME                                                                        
+----------                                                                      
+Research                                                                        
+
+
+DEPTI      EMPNO EMPNAME    DEPTNAME                                            
+----- ---------- ---------- ----------                                          
+d1             6 chen       Research                                            
+d1             3 wayne      Research                                            
+d1             1 smith      Research                                            
+d1             5 king       Research                                            
+d2             2 jones      Devt                                                
+d3             7 winger     Testing                                             
+d3             4 moor       Testing                                             
+
+7 rows selected.
+
+
+     EMPNO EMPNAME    DEPTI DEPTI DEPTNAME                                      
+---------- ---------- ----- ----- ----------                                    
+         6 chen       d1    d1    Research                                      
+         3 wayne      d1    d1    Research                                      
+         1 smith      d1    d1    Research                                      
+         5 king       d1    d1    Research                                      
+         2 jones      d2    d2    Devt                                          
+         7 winger     d3    d3    Testing                                       
+         4 moor       d3    d3    Testing                                       
+
+7 rows selected.
+
+SQL> spool off
