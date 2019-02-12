@@ -1,0 +1,1787 @@
+SQL> start start_text.sql
+SP2-0310: unable to open file "start_text.sql"
+SQL> start start_test.sql
+
+Procedure created.
+
+No errors.
+SQL> exec DisplayMessage('Hello World');
+Hello Hello World                                                               
+
+PL/SQL procedure successfully completed.
+
+SQL> Select ROUND(DBMS_RANDOM.value (10,100)) from DUAL;
+
+ROUND(DBMS_RANDOM.VALUE(10,100))                                                
+--------------------------------                                                
+                              36                                                
+
+SQL> run insert_salary.sql
+  1* Select ROUND(DBMS_RANDOM.value (10,100)) from DUAL
+
+ROUND(DBMS_RANDOM.VALUE(10,100))                                                
+--------------------------------                                                
+                              21                                                
+
+SQL> start insert_salary.sql;
+
+Procedure created.
+
+No errors.
+SQL> exec setSalaries (50000,100000);
+
+PL/SQL procedure successfully completed.
+
+SQL> SELECT * FROM AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Alley                                               74638                       
+Anello                                              78909                       
+White                                               64829                       
+Adams                                               94458                       
+Aldy Jr.                                            80684                       
+Barnes                                              68127                       
+Bates                                               73796                       
+Bedingfield                                         70999                       
+Chaifetz                                            59094                       
+Clarke                                              62750                       
+Cobbina                                             98788                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Crutchfield                                         76080                       
+Dalheim                                             83859                       
+Ealons                                              91873                       
+Escobar                                             78638                       
+Farrell                                             91490                       
+Gaspard                                             63089                       
+Groth                                               55112                       
+Heimbach                                            77143                       
+Jawando                                             66754                       
+Kennedy                                             75713                       
+Konwinski                                           99014                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lewis                                               74960                       
+Liddell-Westefeld                                   62296                       
+Limon                                               68020                       
+Loeb                                                92007                       
+London                                              69167                       
+Maher                                               83721                       
+Messina                                             80679                       
+Monje Jr.                                           96555                       
+Newell                                              83869                       
+Noel                                                57855                       
+Oleske                                              56147                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Page                                                80347                       
+Psaki                                               81182                       
+Reinstein                                           76495                       
+Roche                                               69954                       
+Rouse                                               96983                       
+Sathe                                               61684                       
+Schulman                                            82420                       
+Seymour                                             71281                       
+Shapiro                                             61211                       
+Shaw                                                55194                       
+Sher                                                90241                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Showers                                             75199                       
+Siegel                                              59265                       
+Sirbu                                               89496                       
+Stephens                                            62024                       
+Sutton                                              94935                       
+Taggart Jr.                                         88631                       
+Terry                                               64515                       
+Vanderslice                                         81707                       
+Wear                                                77288                       
+Yeager Kaplan                                       89283                       
+Agnew                                               68241                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Bauer                                               92658                       
+Beliveau                                            70916                       
+Bhowmik                                             83995                       
+Brennan                                             78179                       
+Buffett                                             61362                       
+Carrier                                             64682                       
+Cherlin                                             57665                       
+Cizner                                              78854                       
+Cokley                                              65242                       
+Colvin                                              93097                       
+Cuellar                                             79970                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cutter                                              52575                       
+Deese                                               53814                       
+Dillon                                              88856                       
+Donilon                                             90322                       
+Dorsett                                             73910                       
+Fernandez                                           84370                       
+Frank                                               66324                       
+Frankel                                             82336                       
+Frye                                                56995                       
+Gonzalez                                            50912                       
+Graham                                              58279                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hoang                                               64456                       
+Hopkins                                             74320                       
+Inouye                                              62955                       
+Johnson                                             80638                       
+Larus                                               83682                       
+Lynn                                                65427                       
+Mackey                                              57966                       
+McCarthy                                            85839                       
+McGinnis                                            52110                       
+McGuire                                             50513                       
+Mosteller                                           77063                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mueller                                             64343                       
+Murtha                                              59361                       
+Onek                                                87858                       
+Papas                                               84636                       
+Parker                                              54648                       
+Paulsen                                             90538                       
+Quinn                                               97662                       
+Raizk                                               64379                       
+Reed                                                91181                       
+Ryan                                                57769                       
+Sahgal                                              94055                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sass                                                64055                       
+Schafer                                             99586                       
+Schwartz                                            63406                       
+Sibley                                              96394                       
+Singiser                                            61258                       
+Starkey                                             70967                       
+Swanson                                             71510                       
+Tamarin                                             82619                       
+Tchen                                               85566                       
+Turton                                              53739                       
+Voorman                                             92560                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Watson                                              55613                       
+Wright                                              51555                       
+Asen                                                67677                       
+Belive                                              93606                       
+Browner                                             69329                       
+Brundage                                            50521                       
+Brush                                               59775                       
+Cardwell                                            79367                       
+Chen                                                92305                       
+Chiodo                                              57440                       
+Corrigan                                            89331                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Crowley                                             90433                       
+Davies                                              88450                       
+DeGuzman Jr.                                        93504                       
+Devine                                              80859                       
+Edgerton                                            71572                       
+Edmonds                                             98748                       
+Eisen                                               57505                       
+Espinel                                             90105                       
+Favreau                                             51050                       
+Gardaphe                                            64968                       
+Gillette                                            57865                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gomez                                               77862                       
+Gottry                                              70714                       
+Grant                                               74213                       
+Green                                               51606                       
+Harper                                              55192                       
+Hughes                                              98046                       
+Hurwitz                                             93533                       
+Juska                                               89577                       
+Kammerer                                            94670                       
+Kimball                                             56125                       
+Kommareddi                                          78618                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Kravis                                              82020                       
+LaBolt                                              52967                       
+Lerner                                              57186                       
+Lewin                                               85157                       
+Lippert                                             64423                       
+Lovett                                              69905                       
+Martin                                              89967                       
+Massey                                              71819                       
+Mattson                                             80512                       
+McDonough                                           98202                       
+Milakofsky                                          82505                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Miranda                                             57559                       
+Mu??oz                                              80446                       
+Muntz                                               84979                       
+Odio                                                95142                       
+Pojman                                              68763                       
+Pope                                                61073                       
+Rodriguez                                           72560                       
+Sutphen                                             97587                       
+Thomas                                              93431                       
+Whichard                                            81601                       
+Zichal                                              63274                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ayling                                              79825                       
+Becnel                                              53160                       
+Binns                                               72869                       
+Birdsall                                            91653                       
+Bond                                                62861                       
+Branch                                              90098                       
+Brewer                                              54445                       
+Brown                                               85493                       
+Campos                                              70923                       
+Carter                                              89460                       
+Claude                                              92297                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cohen                                               97619                       
+Davis                                               73607                       
+Dunn                                                57926                       
+Edwards                                             50764                       
+Emanuel                                             61539                       
+Faulman                                             70567                       
+Gavin Jr.                                           88017                       
+Greene                                              88307                       
+Hegde                                               83554                       
+Hernandez                                           72527                       
+Hiatt                                               88311                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hogan                                               62841                       
+Kochman                                             65856                       
+Koo                                                 92976                       
+Krass                                               62678                       
+Lartey                                              77752                       
+Leitner-Laserna                                     95633                       
+Lelyveld                                            86964                       
+Lezotte                                             71178                       
+Liegel                                              57945                       
+Lillie                                              85951                       
+Lu                                                  81778                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Naidoff                                             54889                       
+Narechania                                          94619                       
+Nicholson Jr.                                       70048                       
+Oxtoby                                              75255                       
+Pipkins                                             68868                       
+Portilla                                            55397                       
+Posey                                               60889                       
+Richardson                                          61278                       
+Rittner                                             72810                       
+Roach                                               95821                       
+Ruemmler                                            56112                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Samuels                                             65485                       
+Schmuck                                             81210                       
+Simas                                               96518                       
+Skoczek                                             65709                       
+Spencer                                             56781                       
+Trainor                                             99379                       
+Tranchin                                            56114                       
+Turk                                                70113                       
+Valencia                                            81742                       
+Vogel                                               94442                       
+Wade                                                79130                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Albino                                              72801                       
+Anderson                                            65839                       
+Baldassaro                                          50621                       
+Beinart                                             87286                       
+Blake                                               99825                       
+Chambers                                            61276                       
+Coven                                               62390                       
+Cuba                                                71443                       
+Cunningham                                          52701                       
+DeGuzman                                            94348                       
+DeRosa                                              86917                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Fenn                                                67667                       
+Finlen                                              98862                       
+Fiscus                                              76794                       
+Fitts                                               56162                       
+Ford                                                72429                       
+Gage                                                81845                       
+Gray                                                60827                       
+Hanson                                              84128                       
+Harris                                              89666                       
+Hash                                                88012                       
+Jabbour                                             69521                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jackson                                             59359                       
+Jarrett                                             81565                       
+Jarvis-Shean                                        99757                       
+Jean-Pierre                                         62058                       
+Kalbaugh                                            83866                       
+Kale                                                65747                       
+Kelly                                               68706                       
+Levine                                              65620                       
+Love                                                87075                       
+Maska                                               58752                       
+McGrath                                             97617                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Metcalf                                             55509                       
+Mrazek                                              81905                       
+Neralla                                             69873                       
+Paige                                               86532                       
+Papa                                                81258                       
+Pfeiffer                                            76841                       
+Phadke                                              63590                       
+Pulliam                                             55627                       
+Schuker                                             59726                       
+Smoot                                               63487                       
+Stickel                                             54974                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Stoev                                               92279                       
+Stone                                               87372                       
+Summers                                             68947                       
+Sweeney                                             97555                       
+Teehee                                              67608                       
+Tennison                                            83507                       
+Terrell                                             95780                       
+Tucker                                              58125                       
+Watkins                                             51263                       
+Webster                                             53801                       
+Young Jr.                                           60696                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Young                                               72558                       
+Zelman                                              77897                       
+Bassin                                              84486                       
+Bressler                                            53032                       
+Burman                                              68531                       
+Carden                                              76897                       
+Douglas                                             99464                       
+DuBois                                              80196                       
+Dyer                                                50318                       
+Earnest                                             99858                       
+Firestone                                           68822                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Garcia                                              87539                       
+Hennigan                                            85394                       
+Hornsby                                             58052                       
+Hurley                                              83003                       
+Jamison                                             86019                       
+Kim                                                 87472                       
+King                                                70554                       
+Kramer                                              97615                       
+Lee                                                 94640                       
+Leger                                               80291                       
+Lepow                                               56893                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lorjuste                                            78306                       
+Markovitz                                           79120                       
+McBride                                             67364                       
+McNeal                                              95565                       
+Monteiro                                            79646                       
+Nathan                                              73872                       
+Neiman                                              69970                       
+Ocampo                                              69421                       
+Offerman                                            97770                       
+Olmos                                               81310                       
+Olson                                               75514                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ortiz                                               89996                       
+Pate                                                84937                       
+Pourmorad                                           88404                       
+Rivadeneira                                         63428                       
+Robertson                                           80722                       
+Rosalsky                                            57036                       
+Sabochik                                            63908                       
+Samuels Jr.                                         55484                       
+Sanders                                             78548                       
+Schiliro                                            51027                       
+Shah                                                90368                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sheehy                                              50331                       
+Strautmanis                                         70375                       
+Swire                                               54966                       
+Thorbjornsen                                        85026                       
+Tubman                                              88161                       
+Tucci                                               81122                       
+Vietor                                              90421                       
+Wang-Levine                                         88417                       
+Witt                                                58157                       
+Abrams                                              82106                       
+Attili                                              89816                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Axelrod                                             89922                       
+Bernard                                             73461                       
+Beverly                                             64132                       
+Burton                                              76905                       
+Campoverdi                                          88501                       
+Camu??ez                                            96317                       
+Castillo                                            97235                       
+Chhabra                                             61506                       
+Conrad                                              75832                       
+Cusack                                              89854                       
+De Sio Jr.                                          53759                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DeParle                                             75943                       
+Donovan                                             98822                       
+Droege                                              88774                       
+Fernkas                                             90039                       
+Flatgard                                            99927                       
+Freeman                                             92956                       
+Godfrey                                             99102                       
+Goodman                                             98641                       
+Greenawalt                                          85009                       
+Jarvis                                              80623                       
+Jones                                               77268                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jung                                                83271                       
+Kocher                                              64146                       
+Kumar                                               55526                       
+Lechtenberg                                         76687                       
+Ledbetter                                           70067                       
+Lesser                                              62289                       
+Lipton                                              78126                       
+McCathran                                           51527                       
+Mehrbani                                            87586                       
+Millison                                            71232                       
+Moilanen                                            98975                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Nabors                                              54128                       
+Nelson                                              61842                       
+Northern                                            76905                       
+Rathod                                              59746                       
+Reeves                                              77957                       
+Santucci                                            68542                       
+Saunders                                            89740                       
+Schaub                                              95338                       
+Tate-Gilmore                                        82307                       
+Verrilli                                            76970                       
+Walsh                                               89191                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Winter                                              89105                       
+Amorsingh                                           60413                       
+Andrias                                             54893                       
+Baggetto                                            77982                       
+Baskerville Jr.                                     87263                       
+Bisi                                                79763                       
+Block                                               75429                       
+Blount                                              69039                       
+Bookey-Baker                                        85424                       
+Brooke                                              65377                       
+Burnough                                            53962                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Campbell                                            95448                       
+Canery                                              50148                       
+Cushman                                             84199                       
+Dale                                                89193                       
+Fergenson                                           66628                       
+Finkenbinder                                        97844                       
+Furman                                              84821                       
+Gibbs                                               82738                       
+Gottlieb                                            74807                       
+Hable                                               93982                       
+Higginbottom                                        65601                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hitchcock                                           52849                       
+Johnston                                            58568                       
+Kang                                                66731                       
+Keenan                                              58581                       
+Kelleher Jr.                                        89667                       
+Kiley                                               88294                       
+Kohnke                                              81409                       
+Lehrich                                             75612                       
+Lipsky                                              74199                       
+Luck                                                69728                       
+Mack                                                87681                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mastromonaco                                        88164                       
+Mayekar                                             92129                       
+McLaughlin                                          92789                       
+Millett                                             56450                       
+Nguyen                                              95496                       
+Odintz                                              81328                       
+Perez                                               63551                       
+Phillips                                            66904                       
+Roberts                                             91548                       
+Roddick                                             66680                       
+Rundlet                                             99123                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Setser                                              88327                       
+Smith                                               51035                       
+Sobel                                               93533                       
+Stoneman                                            57590                       
+Stracko                                             62778                       
+Tseggai                                             51279                       
+Utech                                               64547                       
+Vale                                                89320                       
+Vega                                                97908                       
+Weiser                                              79819                       
+Whitty                                              97758                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Williams                                            55837                       
+Wilson                                              68994                       
+Wong                                                94560                       
+
+432 rows selected.
+
+SQL> SELECT ROUND(DBMS_RANDOM.value (65000, 98000)) FROM AlphaCoEmp;
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                75743                                           
+                                77324                                           
+                                68547                                           
+                                97755                                           
+                                90587                                           
+                                80249                                           
+                                67337                                           
+                                95420                                           
+                                90236                                           
+                                69355                                           
+                                84599                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                78544                                           
+                                84918                                           
+                                74734                                           
+                                82403                                           
+                                97616                                           
+                                80794                                           
+                                86324                                           
+                                75980                                           
+                                95612                                           
+                                75664                                           
+                                84476                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                71508                                           
+                                67781                                           
+                                83225                                           
+                                84349                                           
+                                68584                                           
+                                79492                                           
+                                81873                                           
+                                69406                                           
+                                86598                                           
+                                70548                                           
+                                72564                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                72804                                           
+                                94782                                           
+                                78263                                           
+                                89193                                           
+                                78494                                           
+                                89842                                           
+                                68245                                           
+                                68776                                           
+                                76895                                           
+                                79228                                           
+                                80649                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                79743                                           
+                                90837                                           
+                                65460                                           
+                                90395                                           
+                                79275                                           
+                                74599                                           
+                                82292                                           
+                                74185                                           
+                                88328                                           
+                                84044                                           
+                                97191                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                93968                                           
+                                96673                                           
+                                72131                                           
+                                79247                                           
+                                74459                                           
+                                84655                                           
+                                88936                                           
+                                67968                                           
+                                97800                                           
+                                77159                                           
+                                81381                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                91807                                           
+                                76110                                           
+                                88228                                           
+                                74245                                           
+                                67861                                           
+                                84570                                           
+                                65219                                           
+                                90207                                           
+                                78261                                           
+                                90407                                           
+                                77312                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                71968                                           
+                                93176                                           
+                                97501                                           
+                                93948                                           
+                                85877                                           
+                                88677                                           
+                                72201                                           
+                                88450                                           
+                                85789                                           
+                                66516                                           
+                                71237                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                79936                                           
+                                76029                                           
+                                87722                                           
+                                75848                                           
+                                69430                                           
+                                92810                                           
+                                68045                                           
+                                80935                                           
+                                93275                                           
+                                73035                                           
+                                91760                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                69972                                           
+                                67082                                           
+                                68321                                           
+                                76965                                           
+                                79494                                           
+                                66807                                           
+                                95554                                           
+                                66592                                           
+                                67640                                           
+                                91012                                           
+                                92367                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                93469                                           
+                                92621                                           
+                                93008                                           
+                                69924                                           
+                                81660                                           
+                                75105                                           
+                                76725                                           
+                                69483                                           
+                                71037                                           
+                                92094                                           
+                                92410                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                81530                                           
+                                86958                                           
+                                92658                                           
+                                69055                                           
+                                70906                                           
+                                67504                                           
+                                93494                                           
+                                65242                                           
+                                72021                                           
+                                95379                                           
+                                79394                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                75289                                           
+                                72141                                           
+                                78994                                           
+                                95755                                           
+                                83430                                           
+                                90269                                           
+                                74841                                           
+                                81461                                           
+                                80156                                           
+                                94984                                           
+                                65858                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                74944                                           
+                                80953                                           
+                                71382                                           
+                                85953                                           
+                                81154                                           
+                                97293                                           
+                                74083                                           
+                                75029                                           
+                                87685                                           
+                                89565                                           
+                                80718                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                97630                                           
+                                71137                                           
+                                74227                                           
+                                79469                                           
+                                74988                                           
+                                67049                                           
+                                69575                                           
+                                96971                                           
+                                82035                                           
+                                68300                                           
+                                66508                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                74463                                           
+                                90376                                           
+                                78438                                           
+                                95192                                           
+                                91501                                           
+                                91566                                           
+                                91881                                           
+                                66468                                           
+                                71895                                           
+                                69038                                           
+                                75363                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                87912                                           
+                                74911                                           
+                                75813                                           
+                                68348                                           
+                                79989                                           
+                                77533                                           
+                                83179                                           
+                                89807                                           
+                                87739                                           
+                                95009                                           
+                                85531                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                84515                                           
+                                86610                                           
+                                88982                                           
+                                97804                                           
+                                88005                                           
+                                89240                                           
+                                91876                                           
+                                84762                                           
+                                81665                                           
+                                71447                                           
+                                91234                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                88382                                           
+                                78145                                           
+                                97884                                           
+                                79519                                           
+                                75035                                           
+                                65761                                           
+                                80978                                           
+                                79067                                           
+                                65048                                           
+                                79477                                           
+                                90629                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                75442                                           
+                                74485                                           
+                                89216                                           
+                                92003                                           
+                                93167                                           
+                                91856                                           
+                                92314                                           
+                                93979                                           
+                                69566                                           
+                                87816                                           
+                                88119                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                65445                                           
+                                90180                                           
+                                68443                                           
+                                86432                                           
+                                85377                                           
+                                78328                                           
+                                75546                                           
+                                72915                                           
+                                65129                                           
+                                92420                                           
+                                88508                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                87796                                           
+                                89430                                           
+                                85848                                           
+                                69109                                           
+                                95967                                           
+                                91601                                           
+                                83227                                           
+                                71284                                           
+                                80369                                           
+                                72451                                           
+                                95017                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                75731                                           
+                                80613                                           
+                                84149                                           
+                                91660                                           
+                                82319                                           
+                                85219                                           
+                                96442                                           
+                                74577                                           
+                                71784                                           
+                                71892                                           
+                                83414                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                91825                                           
+                                66577                                           
+                                85260                                           
+                                92847                                           
+                                85581                                           
+                                73675                                           
+                                81107                                           
+                                73487                                           
+                                88555                                           
+                                69273                                           
+                                82059                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                96290                                           
+                                78594                                           
+                                87183                                           
+                                85603                                           
+                                78394                                           
+                                65140                                           
+                                74683                                           
+                                68430                                           
+                                66583                                           
+                                65547                                           
+                                70732                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                84594                                           
+                                83841                                           
+                                85762                                           
+                                73651                                           
+                                83819                                           
+                                87905                                           
+                                82329                                           
+                                79807                                           
+                                83544                                           
+                                86245                                           
+                                90085                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                75056                                           
+                                84276                                           
+                                73429                                           
+                                77784                                           
+                                79074                                           
+                                67088                                           
+                                73782                                           
+                                75557                                           
+                                97428                                           
+                                70741                                           
+                                75611                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                97914                                           
+                                68217                                           
+                                97543                                           
+                                91801                                           
+                                92002                                           
+                                88649                                           
+                                65025                                           
+                                75124                                           
+                                77516                                           
+                                91486                                           
+                                69255                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                79588                                           
+                                75229                                           
+                                71079                                           
+                                82752                                           
+                                69910                                           
+                                88482                                           
+                                66651                                           
+                                94732                                           
+                                80640                                           
+                                79329                                           
+                                68336                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                71719                                           
+                                91378                                           
+                                68257                                           
+                                87691                                           
+                                87176                                           
+                                75698                                           
+                                74111                                           
+                                74171                                           
+                                77193                                           
+                                65460                                           
+                                73949                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                84137                                           
+                                77641                                           
+                                79764                                           
+                                97301                                           
+                                83844                                           
+                                65029                                           
+                                94845                                           
+                                73293                                           
+                                87798                                           
+                                67833                                           
+                                67314                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                81135                                           
+                                69028                                           
+                                78339                                           
+                                68266                                           
+                                80725                                           
+                                96820                                           
+                                89423                                           
+                                89887                                           
+                                67764                                           
+                                77460                                           
+                                68989                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                68171                                           
+                                90908                                           
+                                86719                                           
+                                69499                                           
+                                68113                                           
+                                97821                                           
+                                77218                                           
+                                75585                                           
+                                86464                                           
+                                77623                                           
+                                81896                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                94352                                           
+                                74529                                           
+                                89923                                           
+                                82781                                           
+                                66755                                           
+                                96775                                           
+                                89449                                           
+                                97565                                           
+                                82954                                           
+                                95465                                           
+                                72364                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                85059                                           
+                                94644                                           
+                                83982                                           
+                                86511                                           
+                                78599                                           
+                                67584                                           
+                                76875                                           
+                                86632                                           
+                                81182                                           
+                                68631                                           
+                                66856                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                72855                                           
+                                82140                                           
+                                82877                                           
+                                97121                                           
+                                96062                                           
+                                75614                                           
+                                83309                                           
+                                85916                                           
+                                71695                                           
+                                97185                                           
+                                76843                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                73058                                           
+                                86809                                           
+                                80094                                           
+                                67041                                           
+                                72175                                           
+                                96385                                           
+                                74376                                           
+                                87351                                           
+                                75128                                           
+                                97519                                           
+                                65633                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                87153                                           
+                                79419                                           
+                                67317                                           
+                                72083                                           
+                                79988                                           
+                                86452                                           
+                                93400                                           
+                                79216                                           
+                                88321                                           
+                                85478                                           
+                                66036                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                79229                                           
+                                73651                                           
+                                87984                                           
+                                93395                                           
+                                85064                                           
+                                84691                                           
+                                96144                                           
+                                96750                                           
+                                94797                                           
+                                70523                                           
+                                94173                                           
+
+ROUND(DBMS_RANDOM.VALUE(65000,98000))                                           
+-------------------------------------                                           
+                                67153                                           
+                                96686                                           
+                                91157                                           
+
+432 rows selected.
+
+SQL> start Question_7.sql
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE SETEMPSALARY:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/42     PLS-00103: Encountered the symbol "LOW" when expecting one of the      
+         following:                                                             
+         := . ) , @ % default character                                         
+         The symbol "," was substituted for "LOW" to continue.                  
+                                                                                
+SQL> 	start Question_7.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE SETEMPSALARY:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+1/42     PLS-00103: Encountered the symbol "LOW" when expecting one of the      
+         following:                                                             
+         := . ) , @ % default character                                         
+         The symbol "," was substituted for "LOW" to continue.                  
+                                                                                
+SQL> start Question_7.sql;
+
+Procedure created.
+
+No errors.
+SQL> start Question_8.sql
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION GETEMPSALARY:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+8/12     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         constant exception <an identifier>                                     
+         <a double-quoted delimited-identifier> table long double ref           
+         char time timestamp interval date binary national character            
+         nchar                                                                  
+         The symbol "exception" was substituted for ";" to continue.            
+                                                                                
+15/5     PLS-00103: Encountered the symbol "RETURN" when expecting one of       
+         the following:                                                         
+         . ( * @ % & - + ; / at for mod remainder rem                           
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+         <an exponent (**)> and or group having intersect minus order           
+         start union where connect || multiset                                  
+                                                                                
+SQL> start Question_8.sql
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION GETEMPSALARY:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+8/12     PLS-00103: Encountered the symbol ";" when expecting one of the        
+         following:                                                             
+         constant exception <an identifier>                                     
+         <a double-quoted delimited-identifier> table long double ref           
+         char time timestamp interval date binary national character            
+         nchar                                                                  
+         The symbol "exception" was substituted for ";" to continue.            
+                                                                                
+SQL> start Question_8.sql;
+
+Function created.
+
+No errors.
+SQL> Select * From AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Alley                                               74638                       
+Anello                                              78909                       
+White                                               64829                       
+Adams                                               94458                       
+Aldy Jr.                                            80684                       
+Barnes                                              68127                       
+Bates                                               73796                       
+Bedingfield                                         70999                       
+Chaifetz                                            59094                       
+Clarke                                              62750                       
+Cobbina                                             98788                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Crutchfield                                         76080                       
+Dalheim                                             83859                       
+Ealons                                              91873                       
+Escobar                                             78638                       
+Farrell                                             91490                       
+Gaspard                                             63089                       
+Groth                                               55112                       
+Heimbach                                            77143                       
+Jawando                                             66754                       
+Kennedy                                             75713                       
+Konwinski                                           99014                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lewis                                               74960                       
+Liddell-Westefeld                                   62296                       
+Limon                                               68020                       
+Loeb                                                92007                       
+London                                              69167                       
+Maher                                               83721                       
+Messina                                             80679                       
+Monje Jr.                                           96555                       
+Newell                                              83869                       
+Noel                                                57855                       
+Oleske                                              56147                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Page                                                80347                       
+Psaki                                               81182                       
+Reinstein                                           76495                       
+Roche                                               69954                       
+Rouse                                               96983                       
+Sathe                                               61684                       
+Schulman                                            82420                       
+Seymour                                             71281                       
+Shapiro                                             61211                       
+Shaw                                                55194                       
+Sher                                                90241                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Showers                                             75199                       
+Siegel                                              59265                       
+Sirbu                                               89496                       
+Stephens                                            62024                       
+Sutton                                              94935                       
+Taggart Jr.                                         88631                       
+Terry                                               64515                       
+Vanderslice                                         81707                       
+Wear                                                77288                       
+Yeager Kaplan                                       89283                       
+Agnew                                               68241                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Bauer                                               92658                       
+Beliveau                                            70916                       
+Bhowmik                                             83995                       
+Brennan                                             78179                       
+Buffett                                             61362                       
+Carrier                                             64682                       
+Cherlin                                             57665                       
+Cizner                                              78854                       
+Cokley                                              65242                       
+Colvin                                              93097                       
+Cuellar                                             79970                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cutter                                              52575                       
+Deese                                               53814                       
+Dillon                                              88856                       
+Donilon                                             90322                       
+Dorsett                                             73910                       
+Fernandez                                           84370                       
+Frank                                               66324                       
+Frankel                                             82336                       
+Frye                                                56995                       
+Gonzalez                                            50912                       
+Graham                                              58279                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hoang                                               64456                       
+Hopkins                                             74320                       
+Inouye                                              62955                       
+Johnson                                             80638                       
+Larus                                               83682                       
+Lynn                                                65427                       
+Mackey                                              57966                       
+McCarthy                                            85839                       
+McGinnis                                            52110                       
+McGuire                                             50513                       
+Mosteller                                           77063                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mueller                                             64343                       
+Murtha                                              59361                       
+Onek                                                87858                       
+Papas                                               84636                       
+Parker                                              54648                       
+Paulsen                                             90538                       
+Quinn                                               97662                       
+Raizk                                               64379                       
+Reed                                                91181                       
+Ryan                                                57769                       
+Sahgal                                              94055                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sass                                                64055                       
+Schafer                                             99586                       
+Schwartz                                            63406                       
+Sibley                                              96394                       
+Singiser                                            61258                       
+Starkey                                             70967                       
+Swanson                                             71510                       
+Tamarin                                             82619                       
+Tchen                                               85566                       
+Turton                                              53739                       
+Voorman                                             92560                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Watson                                              55613                       
+Wright                                              51555                       
+Asen                                                67677                       
+Belive                                              93606                       
+Browner                                             69329                       
+Brundage                                            50521                       
+Brush                                               59775                       
+Cardwell                                            79367                       
+Chen                                                92305                       
+Chiodo                                              57440                       
+Corrigan                                            89331                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Crowley                                             90433                       
+Davies                                              88450                       
+DeGuzman Jr.                                        93504                       
+Devine                                              80859                       
+Edgerton                                            71572                       
+Edmonds                                             98748                       
+Eisen                                               57505                       
+Espinel                                             90105                       
+Favreau                                             51050                       
+Gardaphe                                            64968                       
+Gillette                                            57865                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gomez                                               77862                       
+Gottry                                              70714                       
+Grant                                               74213                       
+Green                                               51606                       
+Harper                                              55192                       
+Hughes                                              98046                       
+Hurwitz                                             93533                       
+Juska                                               89577                       
+Kammerer                                            94670                       
+Kimball                                             56125                       
+Kommareddi                                          78618                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Kravis                                              82020                       
+LaBolt                                              52967                       
+Lerner                                              57186                       
+Lewin                                               85157                       
+Lippert                                             64423                       
+Lovett                                              69905                       
+Martin                                              89967                       
+Massey                                              71819                       
+Mattson                                             80512                       
+McDonough                                           98202                       
+Milakofsky                                          82505                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Miranda                                             57559                       
+Mu??oz                                              80446                       
+Muntz                                               84979                       
+Odio                                                95142                       
+Pojman                                              68763                       
+Pope                                                61073                       
+Rodriguez                                           72560                       
+Sutphen                                             97587                       
+Thomas                                              93431                       
+Whichard                                            81601                       
+Zichal                                              63274                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ayling                                              79825                       
+Becnel                                              53160                       
+Binns                                               72869                       
+Birdsall                                            91653                       
+Bond                                                62861                       
+Branch                                              90098                       
+Brewer                                              54445                       
+Brown                                               85493                       
+Campos                                              70923                       
+Carter                                              89460                       
+Claude                                              92297                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cohen                                               97619                       
+Davis                                               73607                       
+Dunn                                                57926                       
+Edwards                                             50764                       
+Emanuel                                             61539                       
+Faulman                                             70567                       
+Gavin Jr.                                           88017                       
+Greene                                              88307                       
+Hegde                                               83554                       
+Hernandez                                           72527                       
+Hiatt                                               88311                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hogan                                               62841                       
+Kochman                                             65856                       
+Koo                                                 92976                       
+Krass                                               62678                       
+Lartey                                              77752                       
+Leitner-Laserna                                     95633                       
+Lelyveld                                            86964                       
+Lezotte                                             71178                       
+Liegel                                              57945                       
+Lillie                                              85951                       
+Lu                                                  81778                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Naidoff                                             54889                       
+Narechania                                          94619                       
+Nicholson Jr.                                       70048                       
+Oxtoby                                              75255                       
+Pipkins                                             68868                       
+Portilla                                            55397                       
+Posey                                               60889                       
+Richardson                                          61278                       
+Rittner                                             72810                       
+Roach                                               95821                       
+Ruemmler                                            56112                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Samuels                                             65485                       
+Schmuck                                             81210                       
+Simas                                               96518                       
+Skoczek                                             65709                       
+Spencer                                             56781                       
+Trainor                                             99379                       
+Tranchin                                            56114                       
+Turk                                                70113                       
+Valencia                                            81742                       
+Vogel                                               94442                       
+Wade                                                79130                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Albino                                              72801                       
+Anderson                                            65839                       
+Baldassaro                                          50621                       
+Beinart                                             87286                       
+Blake                                               99825                       
+Chambers                                            61276                       
+Coven                                               62390                       
+Cuba                                                71443                       
+Cunningham                                          52701                       
+DeGuzman                                            94348                       
+DeRosa                                              86917                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Fenn                                                67667                       
+Finlen                                              98862                       
+Fiscus                                              76794                       
+Fitts                                               56162                       
+Ford                                                72429                       
+Gage                                                81845                       
+Gray                                                60827                       
+Hanson                                              84128                       
+Harris                                              89666                       
+Hash                                                88012                       
+Jabbour                                             69521                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jackson                                             59359                       
+Jarrett                                             81565                       
+Jarvis-Shean                                        99757                       
+Jean-Pierre                                         62058                       
+Kalbaugh                                            83866                       
+Kale                                                65747                       
+Kelly                                               68706                       
+Levine                                              65620                       
+Love                                                87075                       
+Maska                                               58752                       
+McGrath                                             97617                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Metcalf                                             55509                       
+Mrazek                                              81905                       
+Neralla                                             69873                       
+Paige                                               86532                       
+Papa                                                81258                       
+Pfeiffer                                            76841                       
+Phadke                                              63590                       
+Pulliam                                             55627                       
+Schuker                                             59726                       
+Smoot                                               63487                       
+Stickel                                             54974                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Stoev                                               92279                       
+Stone                                               87372                       
+Summers                                             68947                       
+Sweeney                                             97555                       
+Teehee                                              67608                       
+Tennison                                            83507                       
+Terrell                                             95780                       
+Tucker                                              58125                       
+Watkins                                             51263                       
+Webster                                             53801                       
+Young Jr.                                           60696                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Young                                               72558                       
+Zelman                                              77897                       
+Bassin                                              84486                       
+Bressler                                            53032                       
+Burman                                              68531                       
+Carden                                              76897                       
+Douglas                                             99464                       
+DuBois                                              80196                       
+Dyer                                                50318                       
+Earnest                                             99858                       
+Firestone                                           68822                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Garcia                                              87539                       
+Hennigan                                            85394                       
+Hornsby                                             58052                       
+Hurley                                              83003                       
+Jamison                                             86019                       
+Kim                                                 87472                       
+King                                                70554                       
+Kramer                                              97615                       
+Lee                                                 94640                       
+Leger                                               80291                       
+Lepow                                               56893                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lorjuste                                            78306                       
+Markovitz                                           79120                       
+McBride                                             67364                       
+McNeal                                              95565                       
+Monteiro                                            79646                       
+Nathan                                              73872                       
+Neiman                                              69970                       
+Ocampo                                              69421                       
+Offerman                                            97770                       
+Olmos                                               81310                       
+Olson                                               75514                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ortiz                                               89996                       
+Pate                                                84937                       
+Pourmorad                                           88404                       
+Rivadeneira                                         63428                       
+Robertson                                           80722                       
+Rosalsky                                            57036                       
+Sabochik                                            63908                       
+Samuels Jr.                                         55484                       
+Sanders                                             78548                       
+Schiliro                                            51027                       
+Shah                                                90368                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Sheehy                                              50331                       
+Strautmanis                                         70375                       
+Swire                                               54966                       
+Thorbjornsen                                        85026                       
+Tubman                                              88161                       
+Tucci                                               81122                       
+Vietor                                              90421                       
+Wang-Levine                                         88417                       
+Witt                                                58157                       
+Abrams                                              82106                       
+Attili                                              89816                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Axelrod                                             89922                       
+Bernard                                             73461                       
+Beverly                                             64132                       
+Burton                                              76905                       
+Campoverdi                                          88501                       
+Camu??ez                                            96317                       
+Castillo                                            97235                       
+Chhabra                                             61506                       
+Conrad                                              75832                       
+Cusack                                              89854                       
+De Sio Jr.                                          53759                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DeParle                                             75943                       
+Donovan                                             98822                       
+Droege                                              88774                       
+Fernkas                                             90039                       
+Flatgard                                            99927                       
+Freeman                                             92956                       
+Godfrey                                             99102                       
+Goodman                                             98641                       
+Greenawalt                                          85009                       
+Jarvis                                              80623                       
+Jones                                               77268                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jung                                                83271                       
+Kocher                                              64146                       
+Kumar                                               55526                       
+Lechtenberg                                         76687                       
+Ledbetter                                           70067                       
+Lesser                                              62289                       
+Lipton                                              78126                       
+McCathran                                           51527                       
+Mehrbani                                            87586                       
+Millison                                            71232                       
+Moilanen                                            98975                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Nabors                                              54128                       
+Nelson                                              61842                       
+Northern                                            76905                       
+Rathod                                              59746                       
+Reeves                                              77957                       
+Santucci                                            68542                       
+Saunders                                            89740                       
+Schaub                                              95338                       
+Tate-Gilmore                                        82307                       
+Verrilli                                            76970                       
+Walsh                                               89191                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Winter                                              89105                       
+Amorsingh                                           60413                       
+Andrias                                             54893                       
+Baggetto                                            77982                       
+Baskerville Jr.                                     87263                       
+Bisi                                                79763                       
+Block                                               75429                       
+Blount                                              69039                       
+Bookey-Baker                                        85424                       
+Brooke                                              65377                       
+Burnough                                            53962                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Campbell                                            95448                       
+Canery                                              50148                       
+Cushman                                             84199                       
+Dale                                                89193                       
+Fergenson                                           66628                       
+Finkenbinder                                        97844                       
+Furman                                              84821                       
+Gibbs                                               82738                       
+Gottlieb                                            74807                       
+Hable                                               93982                       
+Higginbottom                                        65601                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hitchcock                                           52849                       
+Johnston                                            58568                       
+Kang                                                66731                       
+Keenan                                              58581                       
+Kelleher Jr.                                        89667                       
+Kiley                                               88294                       
+Kohnke                                              81409                       
+Lehrich                                             75612                       
+Lipsky                                              74199                       
+Luck                                                69728                       
+Mack                                                87681                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mastromonaco                                        88164                       
+Mayekar                                             92129                       
+McLaughlin                                          92789                       
+Millett                                             56450                       
+Nguyen                                              95496                       
+Odintz                                              81328                       
+Perez                                               63551                       
+Phillips                                            66904                       
+Roberts                                             91548                       
+Roddick                                             66680                       
+Rundlet                                             99123                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Setser                                              88327                       
+Smith                                               51035                       
+Sobel                                               93533                       
+Stoneman                                            57590                       
+Stracko                                             62778                       
+Tseggai                                             51279                       
+Utech                                               64547                       
+Vale                                                89320                       
+Vega                                                97908                       
+Weiser                                              79819                       
+Whitty                                              97758                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Williams                                            55837                       
+Wilson                                              68994                       
+Wong                                                94560                       
+
+432 rows selected.
+
+SQL> Select getEmpSalary('Wong')
+  2  From Dual;
+
+GETEMPSALARY('WONG')                                                            
+--------------------                                                            
+               94560                                                            
+
+SQL> spool off
