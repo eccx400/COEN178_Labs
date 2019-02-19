@@ -1,0 +1,174 @@
+SQL> start a2_tables_echeng.sql
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> start a2_values_echeng.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> start a2_queries_echeng.sql
+
+NAME                                PRICE                                       
+------------------------------ ----------                                       
+bitter gourd                            1                                       
+oatmeal                                 3                                       
+fruit_plate                           7.5                                       
+broccoli pie                           10                                       
+winter melon                           10                                       
+honeydew                               10                                       
+chicken pie                          12.5                                       
+gourd juice                         13.99                                       
+steak                               20.99                                       
+gourd pie                              25                                       
+
+10 rows selected.
+
+
+NAME                                PRICE   CALORIES                            
+------------------------------ ---------- ----------                            
+bitter gourd                            1        200                            
+oatmeal                                 3        120                            
+fruit_plate                           7.5        220                            
+broccoli pie                           10        200                            
+honeydew                               10        200                            
+winter melon                           10        400                            
+chicken pie                          12.5        350                            
+gourd juice                         13.99         50                            
+steak                               20.99        420                            
+gourd pie                              25        100                            
+
+10 rows selected.
+
+
+NAME                             CALORIES                                       
+------------------------------ ----------                                       
+steak                                 420                                       
+
+
+NAME                                                                            
+------------------------------                                                  
+steak                                                                           
+oatmeal                                                                         
+fruit_plate                                                                     
+
+
+NAME                                PRICE                                       
+------------------------------ ----------                                       
+broccoli pie                           10                                       
+gourd juice                         13.99                                       
+honeydew                               10                                       
+
+
+PHONE                  COUNT(*)                                                 
+-------------------- ----------                                                 
+4085551212                    2                                                 
+
+
+SUM(CALORIES)                                                                   
+-------------                                                                   
+         1180                                                                   
+          350                                                                   
+          220                                                                   
+          520                                                                   
+          200                                                                   
+          100                                                                   
+
+6 rows selected.
+
+
+3 rows updated.
+
+SQL> spool off
