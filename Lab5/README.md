@@ -2,7 +2,7 @@
 
 ## Objectives: Learn 
 
-### PLSQL Functions\
+### PLSQL Functions
 ### PLSQL Triggers
 
 In this lab, we will use AlphaCoEmp and Emp_Work tables that you have created in the earlier labs. You may need to create 2 new tables as we follow through the questions. 
