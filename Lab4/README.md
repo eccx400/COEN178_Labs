@@ -1,8 +1,8 @@
 # This is the README.md file for Lab 4 of the COEN 178 Intro to Databases course
 
 ## Objectives: Learn
-SQL Integrity Constraints
-PLSQL Procedures and cursors.
+SQL Integrity Constraints\
+PLSQL Procedures and cursors.\
 SQL random number generator
 
 ------------------------------------------------------------------------------------------------
