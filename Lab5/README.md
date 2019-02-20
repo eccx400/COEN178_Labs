@@ -13,6 +13,6 @@ b) Write a function called calcSalaryRaise() to calculate the amount of raise fo
 c) Create a table called EmpStats.\
 d) Create a procedure called saveCountsByTitle\
 e) Create a function called countByTitle()\
-f) Write a trigger to change the count by title\ 
+f) Write a trigger to change the count by title
 
 Run the queries and capture the results in lab5_output.lst, using spool. 
