@@ -1,0 +1,227 @@
+SQL> start Part_1_table.sql
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+SQL> set serveroutput on;
+SQL> start Exercise_1_trigger.sql
+
+Trigger created.
+
+No errors.
+SQL> start Exercise_1_Queries.sql
+SP2-0310: unable to open file "Exercise_1_Queries.sql"
+SQL> start Exercise_1_inputs.sql
+From Trigger Customer NO: c1 Customer Name: SmithCustomer City: SJ              
+
+1 row created.
+
+From Trigger Customer NO: c2 Customer Name: JonesCustomer City: SJ              
+
+1 row created.
+
+From Trigger Customer NO: c3 Customer Name: PetersCustomer City: SFO            
+
+1 row created.
+
+From Trigger Customer NO: c20 Customer Name: ChenCustomer City: LA              
+
+1 row created.
+
+From Trigger Customer NO: c33 Customer Name: WilliamsCustomer City: SFO         
+
+1 row created.
+
+SQL> Alter trigger display_customer_trig disable
+  2  ;
+
+Trigger altered.
+
+SQL> start Exercise_2_trigger.sql
+
+Trigger created.
+
+SQL> delete from Accounts_6;
+
+0 rows deleted.
+
+SQL> delete from Totals_6;
+
+0 rows deleted.
+
+SQL> start Exercise_2_inputs.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> Select * From Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           7000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> start Exercise_3.sql
+
+1 row updated.
+
+SQL> Select * From Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           7000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> Select * From Accounts_6;
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a1523 checking         1000 c1                                                  
+a2134 saving           5000 c1                                                  
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+SQL> start Exercise_4_trigger.sql
+
+Trigger created.
+
+No errors.
+SQL> delete from Accounts_6;
+
+6 rows deleted.
+
+SQL> delete from Totals_6;
+
+4 rows deleted.
+
+SQL> start Exercise_4_inputs.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> Select * From Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           7000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> Select * From Accounts_6;
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a1523 checking         2000 c1                                                  
+a2134 saving           5000 c1                                                  
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+SQL> start Exercise_4_Queries.sql
+
+1 row updated.
+
+SQL> Select * From Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           6000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> Select * From Accounts_6;
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a1523 checking         1000 c1                                                  
+a2134 saving           5000 c1                                                  
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+SQL> start Exercise_5_trigger.sql
+
+Trigger created.
+
+No errors.
+SQL> start Exercise_5_Queries.sql
+UPDATE BANKCUST_6
+       *
+ERROR at line 1:
+ORA-20999: Cannot update a Primary Key 
+ORA-06512: at "ECHENG.NOUPDATEPK_TRIG", line 3 
+ORA-04088: error during execution of trigger 'ECHENG.NOUPDATEPK_TRIG' 
+
+
+SQL> Select * From Accounts_6;
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a1523 checking         1000 c1                                                  
+a2134 saving           5000 c1                                                  
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+SQL> Select * From Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           6000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> spool off
